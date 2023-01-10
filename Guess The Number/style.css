@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  cursor: pointer;
+  display: block;
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #1b1b1b;
+  background-color: #fff;
+}
+
+html {
+  font-size: 50.5%;
+}
+
+body {
+  font-family: "Press Start 2P", sans-serif;
+  background-color: #1b1b1b;
+  color: #fff;
+  height: 200px;
+}
+
+.heading--main {
+  font-size: 5rem;
+}
+.header *::first-letter {
+  text-transform: capitalize;
+}
+
+.header {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  text-align: center;
+  min-height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__top * {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.text-top {
+  font-size: 2rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 40rem;
+}
+
+.main--number {
+  margin-top: 4rem;
+  font-style: normal;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+  width: 14rem;
+  height: 14rem;
+  background-color: #fff;
+  color: #1b1b1b;
+  text-align: center;
+}
+
+.main--number::after {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  height: 0.7rem;
+  width: 100vw;
+  background-color: #fff;
+}
+
+.main-content {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-content > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#number-input {
+  font-family: inherit;
+  width: 18rem;
+  height: 9rem;
+  padding: 1rem;
+  margin-bottom: 4rem;
+  background-color: #1b1b1b;
+  color: #fff;
+  font-size: 4rem;
+  outline: none;
+  border: 3px solid #fff;
+  text-align: center;
+}
+#number-input:focus {
+  outline: 1px solid #69ff47;
+}
+
+.game-status {
+  font-size: 3rem;
+  margin-bottom: 8rem;
+}
+
+.score-box {
+  font-size: 2rem;
+  align-items: flex-start;
+}
+
+.label-score {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 750px) {
+  html {
+    font-size: 40.5%;
+  }
+  .main-content {
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 80%;
+  }
+  .score-box {
+    order: -1;
+    margin-bottom: 4rem;
+    align-items: center;
+  }
+
+  .game-status {
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .heading--main {
+    font-size: 3.4rem;
+  }
+}
